@@ -1,8 +1,15 @@
 #include "gtest/gtest.h"
 #include "User.hpp"
 
-TEST(UserTest, MakeSureUserMaKhasso)
+TEST(PlayerTest, MakeSurePlayerGetName)
 {
-	players::User user;
-	EXPECT_EQ(user.printSomething(), "ma khassak");
+	
+	std::string pName = Player.getPlayerName();
+	std::cout << pName << std::endl;
+}
+TEST(PlayerTest, MakeSurePlayerGetLongCash)
+{
+	long getCurrentCash() ;
+
+
 }

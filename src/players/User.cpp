@@ -1,9 +1,14 @@
 #include "User.hpp"
+namespace player {
 
-using namespace players;
+    long Player::getCurrentCash() const
+    {
+        return cash;
+    }
 
+    std::string Player::getPlayerName() const
+    {
+        return name;
+    }
 
-std::string User::printSomething() const
-{
-   return "ma khassak";
 }

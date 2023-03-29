@@ -1,18 +1,24 @@
 #ifndef MECHANICS_DICE_HPP
 #define MECHANICS_DICE_HPP
-
 #include <string>
+namespace player {
 
-namespace players
-{
+    class Player
+    {
+    private:
+        long cash;
+        std::string name;
+    public:
+        Player(std::string playerName)
+        {
+            name = playerName;
+            cash = 0;
+        }
+        ~Player() {}
 
-   class User
-   {
-   public:
-      User() = default;
-   public:
-      std::string printSomething() const;
-   };
+        long getCurrentCash() const;
+        std::string getPlayerName() const;
+    };
 }
 
 #endif
