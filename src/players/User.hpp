@@ -5,20 +5,21 @@ namespace player {
 
     class Player
     {
-    private:
-        long cash;
-        std::string name;
     public:
-        Player(std::string playerName)
-        {
-            name = playerName;
-            cash = 0;
-        }
-        ~Player() {}
+        Player(const std::string& name, int score, double cash);
 
-        long getCurrentCash() const;
-        std::string getPlayerName() const;
+        std::string getName() const;
+        int getScore() const;
+        double getCash() const;
+
+        void setName(const std::string& name);
+        void setScore(int score);
+        void setCash(double cash);
+
+    private:
+        std::string name;
+        int score;
+        double cash;
     };
-}
-
+};
 #endif
