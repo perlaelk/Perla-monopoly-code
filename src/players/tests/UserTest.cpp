@@ -9,7 +9,6 @@ TEST(PlayerTest, ConstructorAndGetters) {
     EXPECT_EQ(p.getScore(), 42);
     EXPECT_DOUBLE_EQ(p.getCash(), 1000.0);
 }
-
 TEST(PlayerTest, Setters) {
     player::Player p("Bob", 0, 0.0);
     p.setName("Charlie");
